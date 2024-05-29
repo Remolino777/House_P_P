@@ -23,7 +23,7 @@ area=   4753.029385188196
 
 
 
-img_path = r'img\Casa-01.png'
+img_path = 'Casa-01.png'
 
 #_____________________________________________SIDEBAR
 with st.sidebar:
