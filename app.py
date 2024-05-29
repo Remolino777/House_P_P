@@ -23,7 +23,7 @@ area=   4753.029385188196
 
 
 
-img_path = r'img\Casa-01.png'
+img_path = r'https://github.com/Remolino777/House_P_P/blob/main/img/Casa-01.png'
 
 #_____________________________________________SIDEBAR
 with st.sidebar:
