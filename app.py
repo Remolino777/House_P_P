@@ -23,7 +23,7 @@ area=   4753.029385188196
 
 
 
-img_path = r'https://github.com/Remolino777/House_P_P/blob/main/img/Casa-01.png'
+img_path = r'https://github.com/Remolino777/House_P_P/assets/39866683/66ff6374-3190-4d7f-a5e2-7af37f5d5158)'
 
 #_____________________________________________SIDEBAR
 with st.sidebar:
@@ -90,11 +90,12 @@ with cl2:
         st.subheader(f'House value prediction:')
         st.title(f'{st.session_state["predict"]}.00 $')
 with cl3:
-    st.subheader('House specifications')
-    st.write(f'Bedrooms:    {bedrooms}')
-    st.write(f'Bathrooms:   {bathrooms}')
-    st.write(f'Stories:     {stories}')
-    st.write(f'House area:   {round(np.exp(area),2)} sqf')
+    if submited:
+        st.subheader('House specifications')
+        st.write(f'Bedrooms:    {bedrooms}')
+        st.write(f'Bathrooms:   {bathrooms}')
+        st.write(f'Stories:     {stories}')
+        st.write(f'House area:   {round(np.exp(area),2)} sqf')
 
 
 
