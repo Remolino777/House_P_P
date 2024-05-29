@@ -80,19 +80,21 @@ with st.sidebar:
 cl1, cl2, cl3 = st.columns([1,2,1])
 
 with cl2:
+    st.title('House value *STIMATOR*')
     "---"
+    
     st.image(img_path)
     "---"    
     if 'predict' in st.session_state:
-        st.subheader('House specifications')
-        st.write(f'Bedrooms:    {bedrooms}')
-        st.write(f'Bathrooms:   {bathrooms}')
-        st.write(f'Stories:     {stories}')
-        st.write(f'House area:   {round(np.exp(area),2)} sqf')
+        
         st.subheader(f'House value prediction:')
         st.title(f'{st.session_state["predict"]}.00 $')
-
-
+with cl3:
+    st.subheader('House specifications')
+    st.write(f'Bedrooms:    {bedrooms}')
+    st.write(f'Bathrooms:   {bathrooms}')
+    st.write(f'Stories:     {stories}')
+    st.write(f'House area:   {round(np.exp(area),2)} sqf')
 
 
 
